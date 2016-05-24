@@ -7,8 +7,10 @@
     "url": "https://github.com/bhirby/learn-node.git"
   },
   "dependencies": {
+    "ejs": "^2.4.1",
     "express": "^4.13.4",
     "grunt": "latest",
+    "instagram-node": "^0.5.8",
     "mongoose": "latest"
   },
   "author": "Ben Hirby",
