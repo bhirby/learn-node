@@ -11,10 +11,18 @@ app.use(express.static(__dirname + '/public'));
 // set the view engine to ejs
 app.set('view engine', 'ejs');
 
+
+// configure instagram app with client_id
+ig.use({
+    client_id: 'd69c8817c7344f9fbc0b529e3d425573',
+    client_secret: '4154c14a5c414facb25fc887790e7c7a'
+});
+
 //ROUTES
 http://localhost:8080/
 app.get('/', function (req,res) {
-    res.render('pages/index');
+	ig.media_popular(function(err, medias, remaining, limit) {
+    res.render('pages/index', { grams: medias });
 });
 
 //start the server on port 8080
