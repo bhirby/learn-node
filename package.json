@@ -1,0 +1,16 @@
+{
+  "name": "learn-node",
+  "description": "Ben learning to code Node.js",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bhirby/learn-node.git"
+  },
+  "dependencies": {
+    "express": "^4.13.4",
+    "grunt": "latest",
+    "mongoose": "latest"
+  },
+  "author": "Ben Hirby",
+  "license": "MIT"
+}
