@@ -16,13 +16,18 @@
 				</a>
 		<div class="instagram-bar"> <div class="likes">
 			<span class="glyphicon glyphicon-heart"></span>
-				<%= gram.likes.count %> </div>
-		<div class="comments">
-			<span class="glyphicon glyphicon-comment"></span> <%= gram.comments.count %>
-			</div>
+				<%= gram.likes.count %>
 		</div>
-	<% }); %> </div>
-	</main>
+		<div class="comments">
+			<span class="glyphicon glyphicon-comment"></span>
+			<%= gram.comments.count %>
+		</div>
+	</div>
+</div>
+<% }); %> 
+</div>
+
+</main>
 	<footer>
 		<% include ../partials/footer %>
 	</footer>

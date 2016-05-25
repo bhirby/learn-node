@@ -20,11 +20,12 @@ ig.use({
 
 //ROUTES
 http://localhost:8080/
-app.get('/', function (req,res) {
-	ig.media_popular(function(err, medias, remaining, limit) {
-    res.render('pages/index', { grams: medias });
-});
-
+	app.get('/', function (req,res) {
+		ig.media_popular(function(err, medias, remaining, limit) {
+			res.render('pages/index', { grams: medias });
+		});
+	});	
+	
 //start the server on port 8080
 app.listen(8080);
 
